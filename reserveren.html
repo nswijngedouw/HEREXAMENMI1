@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="menu">
+            <div id="cssmenu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="kaart.html">KAART</a>
+                    </li>
+                    <li><a href="gallerij.html">GALLERIJ</a>
+                    </li>
+                    <li><a href="reserveren.html">RESERVEREN</a>
+                    </li>
+                    <li><a href="contact.html">CONTACT</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="blok">
+            <div id="formulier">
+
+                <form class="pure-form pure-form-stacked">
+                    <fieldset>
+                        <legend>Reservatieformulier</legend>
+
+                        <label for="name">Naam</label>
+                        <input id="name" placeholder="Naam">
+
+                        <label for="voornaam">Voornaam</label>
+                        <input id="voornaam" placeholder="Voornaam">
+
+                        <label for="phone">Telefoon</label>
+                        <input id="phone" placeholder="Telefoon">
+
+                        <label for="phone">Datum</label>
+                        <input id="date" type="date" value="datetime-local">
+
+                        <label>Tijdslot</label>
+                        <select name="tijd">
+                            <option value="10-12">11u-13u</option>
+                            <option value="12-14">13u-15u</option>
+                            <option value="14-16">15u-17u</option>
+                            <option value="16-18">17u-19u</option>
+                            <option value="18-20">19u-21u</option>
+                            <option value="20-22">21u-23u</option>
+                        </select>
+
+                        <label for="tafel">Tafel</label>
+                        <select name="tafel">
+                            <option value="t1">Tafel 1</option>
+                            <option value="t2">Tafel 2</option>
+                            <option value="t3">Tafel 3</option>
+                            <option value="t4">Tafel 4</option>
+                            <option value="t5">Tafel 5</option>
+                            <option value="t6">Tafel 6</option>
+                            <option value="t7">Tafel 7</option>
+                        </select>
+
+                        <label for="aantalspelers">Aantal spelers</label>
+                        <input type="number" name="aantal" min="1" max="8">
+
+                        <label for="commentaar">Commentaar</label>
+                        <textarea name="commentaar" placeholder="commentaar"></textarea>
+
+                        <button type="submit" class="pure-button pure-button-primary">Reserveren</button>
+                    </fieldset>
+                </form>
+
+            </div>
+
+            
+        </div>
+
+    </div>
+
+</body>

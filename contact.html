@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapProp = {
+                center: new google.maps.LatLng(50.86153, 4.25997),
+                zoom: 16,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googlemaps"), mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="menu">
+            <div id="cssmenu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="kaart.html">KAART</a>
+                    </li>
+                    <li><a href="gallerij.html">GALLERIJ</a>
+                    </li>
+                    <li><a href="reserveren.html">RESERVEREN</a>
+                    </li>
+                    <li><a href="contact.html">CONTACT</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+<div id="blok">
+
+        <div id="info">
+            <p>
+                <img src="img/situation.png" alt="adres">Elegemstraat 50, 1700 Dilbeek
+
+            </p>
+            <p>
+                <img src="img/telephone38.png" alt="telefoon">02/466 07 24
+
+            </p>
+            <p>
+                <img src="img/calendar68.png" alt="kalender">Dinsdag &amp; Woensdag gesloten
+
+            </p>
+            <p>
+                <img src="img/information3.png" alt="info"><s> betaling met bancontact</s> 
+
+            </p>
+        </div>
+
+        
+        <div id="logocontact">
+
+           <img alt="logo" src="img/meiboom4.png">
+
+        </div>
+
+
+        <div id="opening">
+
+            <table id="openingsh" cellpadding="2" cellspacing="2" style="border: 1px solid #37424a;" bgcolor="#eadd9a">
+
+                <tr>
+                    <td bgcolor="#66a755" style="padding-left:5px;padding-right:5px;">Maandag</td>
+                    <td style="padding-left:5px;padding-right:5px;">11:00 - ...</td>
+                    <td style="padding-left:5px;padding-right:5px;"></td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#66a755" style="padding-left:5px;padding-right:5px;">Dinsdag</td>
+                    <td style="padding-left:5px;padding-right:5px;">Gesloten</td>
+                    <td style="padding-left:5px;padding-right:5px;"></td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#66a755" style="padding-left:5px;padding-right:5px;">Woensdag</td>
+                    <td style="padding-left:5px;padding-right:5px;">Gesloten</td>
+                    <td style="padding-left:5px;padding-right:5px;"></td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#66a755" style="padding-left:5px;padding-right:5px;">Donderdag</td>
+                    <td style="padding-left:5px;padding-right:5px;">11:00 - ...</td>
+                    <td style="padding-left:5px;padding-right:5px;"></td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#66a755" style="padding-left:5px;padding-right:5px;">Vrijdag</td>
+                    <td style="padding-left:5px;padding-right:5px;">11:00 - ...</td>
+                    <td style="padding-left:5px;padding-right:5px;"></td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#66a755" style="padding-left:5px;padding-right:5px;">Zaterdag</td>
+                    <td style="padding-left:5px;padding-right:5px;">11:00 - ...</td>
+                    <td style="padding-left:5px;padding-right:5px;"></td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#66a755" style="padding-left:5px;padding-right:5px;">Zondag</td>
+                    <td style="padding-left:5px;padding-right:5px;">11:00 - ...</td>
+                    <td style="padding-left:5px;padding-right:5px;"></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div id="googlemaps">
+
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
